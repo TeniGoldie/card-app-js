@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cards</title>
+  <meta name="viewport" content="initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+  <section class="container">
+    <div id="card">
+      <figure class="front">
+        <div class="images">
+          <div style="width: 80px; height: 50px; float: right; margin: 20px;" id="imagePlace"></div>
+        </div>
+        <div class="inputs">
+          <h3 id="cardInput" class="cardNumbers" style="margin: 10px 40px; float: left; letter-spacing: 1px">•••• •••• •••• ••••</h3>
+        </div><br>
+        <div>
+          <h4 id="nameInput" class="fullName" style="margin: 5px 10px 10px 30px; float: left;">FULL NAME</h4>
+        <div>
+        <h4 id="expiryInput" class="expiryDate" style="margin: 5px 30px 10px 10px; float: right">••/••</h4>
+      </figure>
+
+      <figure class="back">
+        <p style="background-color:black; margin: 20px 0; padding: 20px"></p>
+        <p style="background-color:white; margin: 20px 10px; padding: 15px 130px; float: left"></p>
+        <h4 id="cvcInput" class="cvcNumbers" style="margin: 20px 10px; padding-top: 25px"> ••• </h5>
+      </figure>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="form-group row">
+          <form action="">
+            <input id="cardNumber" placeholder="Card number" type="text" name="number" class="form-control"  maxlength="19"
+            onkeypress="replaceDefault()">
+            <input id="fullName" placeholder="Full name" type="text" name="name" class="form-control" maxlength="20">
+            <input id="expiryDate" placeholder="MM/YY" type="text" name="expiry" class="form-control" maxlength="5">
+            <input id="cvcNumbers" placeholder="CVC" type="text" name="cvc" class="form-control" maxlength="3">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
